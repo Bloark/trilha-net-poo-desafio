@@ -9,10 +9,15 @@ namespace DesafioPOO.Models
         protected string Imei { get; set; }    
         protected string Memoria{ get; set; }    
 
-        public Smartphone(string numero)
+        public Smartphone(string numero, string modelo,string imei, string memoria)
         {
             Numero = numero;
             // TODO: Passar os parâmetros do construtor para as propriedades
+            //OK
+            Modelo = modelo;
+            Imei = imei;
+            Memoria = memoria;
+
         }
 
         public void Ligar()
